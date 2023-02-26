@@ -1,28 +1,20 @@
 {
-  "name": "uv-app",
-  "version": "1.0.0",
-  "description": "Ultraviolet instance",
+  "name": "cosmic-static",
+  "main": "lib/index.js",
+  "version": "1.0.2",
   "type": "module",
-  "engines": {
-    "npm": ">=7.0.0",
-    "node": ">=16.0.0"
-  },
   "scripts": {
-    "start": "node lib/index.js"
+    "build": "node scripts/build.js"
   },
-  "keywords": [
-    "proxy"
+  "files": [
+    "public",
+    "lib"
   ],
-  "author": "",
-  "license": "GPL-3.0-or-later",
-  "dependencies": {
-    "@titaniumnetwork-dev/ultraviolet": "^1.0.8-beta",
-    "@tomphttp/bare-server-node": "^1.2.5",
-    "express": "^4.18.2",
-    "ultraviolet-static": "github:titaniumnetwork-dev/Ultraviolet-Static"
+  "peerDependencies": {
+    "@titaniumnetwork-dev/ultraviolet": "^1.0.5"
   },
   "devDependencies": {
-    "eslint": "^8.32.0",
-    "prettier": "^2.8.3"
+    "eslint": "^8.23.0",
+    "prettier": "^2.7.1"
   }
 }
