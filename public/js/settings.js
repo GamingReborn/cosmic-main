@@ -57,11 +57,11 @@ function lava() {
 	window.localStorage.setItem('midnight', 'off')
 	window.localStorage.removeItem('midnight')
 }
-function classic() {
-	window.localStorage.setItem('classic', 'on')
-	document.body.style.backgroundColor = "#282834"
+function cherry() {
+	window.localStorage.setItem('cherry', 'on')
+	document.body.style.backgroundColor = "#d37979"
 	document.body.style.color = "#ffffff"
-	document.body.style.setProperty('--bg-c', "#282834");
+	document.body.style.setProperty('--bg-c', "#d37979");
 	window.localStorage.setItem('midnight', 'off')
 	window.localStorage.removeItem('midnight')
 	window.localStorage.setItem('lava', 'off')
@@ -87,8 +87,8 @@ function checkTheme() {
 		document.body.classList.add("midnight")
 	}
 
-	else if (window.localStorage.getItem('lava') == "on") {
-		document.body.classList.add("lava")
+	else if (window.localStorage.getItem('cherry') == "on") {
+		document.body.classList.add("cherry")
 	}
 	else if (window.localStorage.getItem('retro') == "on") {
 		document.body.classList.add("retro")
@@ -118,11 +118,11 @@ function edpuzzle() {
 	document.title = "Edpuzzle"
 	localStorage.setItem('title', 'Edpuzzle')
 }
+localStorage.setItem('title', 'cosmic')
 //when function is called it sets the title
 function setTitle() {
 
 	// set title on first load so we dont get "null" in the title
-	localStorage.setItem('title', 'cosmic')
 	document.title = localStorage.getItem('title')
 }
 function loadSettings() {

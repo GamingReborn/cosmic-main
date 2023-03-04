@@ -19,6 +19,13 @@
 	--bg-c: #162545;
 
 }
+.cherry {
+	margin: 0;
+	color:#ffffff;
+	background: #d37979;
+	--bg-c: #d37979;
+
+}
 .center {
   margin: 0;
   position: absolute;
