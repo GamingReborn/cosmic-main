@@ -95,20 +95,15 @@ function checkTheme() {
 	}
 }
 function ab() {
-	//Creates new ABC
-	var page = new ABC({
-		"type": "blank", //Blank, blob, or overwrite
-		"url": "https://example.com" //Any url
-	})
-	//Set the type
-	page.setType("blank")
-	//Set the url
-	page.setUrl(window.location.href)
-	//Get iframe code
-	console.log(page.getCode())
-	//Open page
-	page.open()
-}
+	var myWindow1 = window.open('', 'myWindow1', 'scrollbars=1,height='+screen.availHeight+',width='+screen.availWidth);
+	myWindow1.document.write('<!DOCTYPE html>\n\
+  <title>Google</title>\n\
+  <p><iframe src="https://cosmic-production.up.railway.app/" frameborder="0" style="overflow:hidden;overflow-x:hidden;overflow-y:hidden;height:100%;width:100%;position:absolute;top:0px;left:0px;right:0px;bottom:0px" height="100%" width="100%">\n\
+  <script>\n\
+  alert("");\n\
+  <\x2fscript>');
+	location.replace("https://google.com");
+  }
 
 function google() {
 	document.title = "Google"
